@@ -1,0 +1,19 @@
+server:
+  port: 8764
+
+spring:
+  application:
+    name: Consumer
+  thymeleaf:
+    encoding: utf-8
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+
+eureka:
+  client:
+    service-url:
+      deafaultZone: http://localhost:8761/eureka/
+feign:
+  hystrix:
+    enabled: false
